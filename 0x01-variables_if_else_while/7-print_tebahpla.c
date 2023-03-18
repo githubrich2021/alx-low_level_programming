@@ -5,7 +5,7 @@
  *
  * Description: prints the lowercase alphabet in reverse
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
@@ -15,6 +15,7 @@ int main(void)
 	while (ch >= 'a')
 	{
 		putchar(ch);
+		--ch;
 	}
 	putchar('\n');
 
