@@ -1,23 +1,42 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints the sum of all multiples of 3 or 5 up to 1024
- * Return: Always (Success)
+ * print_times_table - Prints the times table of the input,
+ * starting with 0.
+ * @n: The value of the time table to be printed.
  */
 
-int main(void)
+void print_times_table(int n)
 
 {
-	int i, z = 0;
+	int num, mult, prod;
 
-	while (i < 1024)
+	if (n >= 0 && n <= 15)
 	{
-	if ((i % 3 == 0) || (i % 5 == 0))
+	for (num = 0; num <= n; num++)
 	{
-	z += i;
+	_putchar('0');
+	for (mult = 1; mult <= n; mult++)
+	{
+	_putchar(',');
+	_putchar(' ');
+	prod = num * mult;
+	if (prod <= 99)
+	_putchar(' ');
+	if (prod <= 9)
+	_putchar(' ');
+	if (prod >= 100)
+	{
+	_putchar((prod / 100) + '0');
+	_putchar(((prod / 10)) % 10 + '0');
 	}
-	i++;
+	else if (prod <= 99 && prod >= 10)
+	{
+	_putchar((prod / 10) + '0');
 	}
-	printf("%d\n", z);
-	return (0);
+	_putchar((prod % 10) + '0');
+	}
+	_putchar('\n');
+	}
+	}
 }
