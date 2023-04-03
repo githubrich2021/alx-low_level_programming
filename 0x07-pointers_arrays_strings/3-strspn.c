@@ -4,7 +4,8 @@
  * _strspn - prints the consecutive
  * @s: source string
  * @accept: searching string
- * Return: 0 
+ *
+ * Return: new string
  */
 unsigned int _strspn(char *s, char *accept)
 {
