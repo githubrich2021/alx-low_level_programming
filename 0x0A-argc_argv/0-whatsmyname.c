@@ -1,15 +1,15 @@
-#include "main.h"
 #include <stdio.h>
+include "main.h"
 
 /**
- * main - Entry point name
- * @argc: count
- * @argv: vector
+ * main - Printing names
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Retrun: Always 0.
+ * Retrun: 0 (Success)
  */
-
 int main(int argc, char *argv[])
+
 {
 	(void) argc;
 	printf("%s\n", argv[0]);
