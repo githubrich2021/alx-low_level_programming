@@ -1,20 +1,10 @@
 #include "main.h"
-/**
- * _memset - Entry point
- * @s: address
- * @b: output value
- * @n: numbers
- *
- * Return: changing n value
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	int r = 0;
-
-	for (; n > 0; r++)
-	{
-		s[r] = b;
-		n--;
-	}
-	return (s);
+    return memset(s, b, n);
 }
