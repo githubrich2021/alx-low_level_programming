@@ -1,18 +1,18 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 /**
  * malloc_checked - Entry point
- * @b: allocates
+ * @b: number of bytes to allocates
  *
- * Return: if malloc fails, and status is equal to 98
+ * Return: a pointer to the allocated memory.
+ * if malloc fails, status value is equal to 98.
  */
 void *malloc_checked(unsigned int b)
 {
 	char *p;
-	/*alocates*/
 
 	p = malloc(b);
 	if (p == NULL)
 		exit(98);
-	return (0);
+	return (p);
 }
