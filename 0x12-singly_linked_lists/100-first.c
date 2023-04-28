@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void frist(void)__attribute__((constructor));
+void first(void)__attribute__((constructor));
 
 /**
 * first - Entry point
